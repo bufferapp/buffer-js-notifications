@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/notifications",
-  "version": "1.9.4-beta-01",
+  "version": "1.9.4-beta-02",
   "description": "Display application notifications",
   "main": "lib/index.js",
   "scripts": {
@@ -59,8 +59,7 @@
           "targets": {
             "node": "8"
           },
-          "browsers": "> 3%",
-          "modules": false
+          "browsers": "> 3%"
         }
       ],
       "react"
@@ -69,24 +68,7 @@
       "transform-class-properties",
       "transform-export-extensions",
       "transform-object-rest-spread"
-    ],
-    "env": {
-      "test": {
-        "presets": [
-          [
-            "env",
-            {
-              "modules": "commonjs"
-            }
-          ]
-        ],
-        "plugins": [
-          "transform-class-properties",
-          "transform-export-extensions",
-          "transform-object-rest-spread"
-        ]
-      }
-    }
+    ]
   },
   "eslintConfig": {
     "parser": "babel-eslint",
