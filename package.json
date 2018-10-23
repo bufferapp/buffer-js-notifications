@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/notifications",
-  "version": "1.9.4-beta-02",
+  "version": "1.9.4",
   "description": "Display application notifications",
   "main": "lib/index.js",
   "scripts": {
