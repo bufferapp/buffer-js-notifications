@@ -4,6 +4,7 @@
   "description": "Display application notifications",
   "main": "lib/index.js",
   "scripts": {
+    "storybook": "start-storybook -p 9002",
     "lint": "eslint --ext .js test/ src/",
     "test": "npm run lint && jest",
     "test-watch": "jest --watch",
@@ -18,20 +19,31 @@
   "dependencies": {
     "@bufferapp/components": "3.0.2",
     "@bufferapp/keywrapper": "0.2.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-redux": "5.0.4",
     "uuid": "3.0.1"
   },
   "devDependencies": {
+    "@storybook/core": "^3.4.11",
+    "@storybook/react": "^3.4.11",
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-jest": "^23.6.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "deep-freeze": "0.0.1",
     "eslint": "^5.3.0",
     "eslint-plugin-prettier": "^2.6.2",
-    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "eslint-plugin-react": "6.10.3",
     "jest": "^23.5.0",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "storybook-addon-a11y": "^3.1.9"
   },
   "babel": {
     "presets": [
@@ -41,12 +53,16 @@
           "targets": {
             "node": "8"
           },
-          "browsers": "> 3%"
+          "browsers": "> 3%",
+          "modules": false
         }
-      ]
+      ],
+      "react"
     ],
     "plugins": [
-      "transform-export-extensions"
+      "transform-class-properties",
+      "transform-export-extensions",
+      "transform-object-rest-spread"
     ]
   },
   "eslintConfig": {
@@ -56,7 +72,8 @@
       "es6": true
     },
     "plugins": [
-      "prettier"
+      "prettier",
+      "react"
     ],
     "rules": {
       "prettier/prettier": [
