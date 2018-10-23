@@ -1,5 +1,5 @@
 import deepFreeze from 'deep-freeze'
-import reducer from './reducer'
+import reducer from '../src/reducer'
 
 describe('reducer', () => {
   it('should initialize default state', () => {

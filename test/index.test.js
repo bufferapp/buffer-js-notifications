@@ -1,4 +1,4 @@
-import { reducer, actions, actionTypes } from './index'
+import { reducer, actions, actionTypes } from '../src/index'
 
 describe('ProfileSidebar', () => {
   it('should export reducer', () => {

@@ -63,7 +63,24 @@
       "transform-class-properties",
       "transform-export-extensions",
       "transform-object-rest-spread"
-    ]
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "env",
+            {
+              "modules": "commonjs"
+            }
+          ]
+        ],
+        "plugins": [
+          "transform-class-properties",
+          "transform-export-extensions",
+          "transform-object-rest-spread"
+        ]
+      }
+    }
   },
   "eslintConfig": {
     "parser": "babel-eslint",
@@ -87,6 +104,12 @@
       ],
       "no-unused-vars": 2
     }
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules(?!/@bufferapp/components)/"
+    ],
+    "verbose": true
   },
   "publishConfig": {
     "access": "public"
