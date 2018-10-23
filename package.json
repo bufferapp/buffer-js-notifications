@@ -17,14 +17,11 @@
     "src"
   ],
   "dependencies": {
-    "@bufferapp/components": "3.0.2",
     "@bufferapp/keywrapper": "0.2.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-redux": "5.0.7",
     "uuid": "3.3.2"
   },
   "devDependencies": {
+    "@bufferapp/components": "3.0.2",
     "@storybook/core": "^3.4.11",
     "@storybook/react": "^3.4.11",
     "babel-cli": "^6.26.0",
@@ -43,7 +40,16 @@
     "eslint-plugin-react": "7.11.1",
     "jest": "^23.5.0",
     "prettier": "^1.14.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "5.0.7",
     "storybook-addon-a11y": "^3.1.9"
+  },
+  "peerDependencies": {
+    "@bufferapp/components": "3.x",
+    "react": "16.x",
+    "react-dom": "16.x",
+    "react-redux": "5.x"
   },
   "babel": {
     "presets": [
