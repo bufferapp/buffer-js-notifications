@@ -21,15 +21,15 @@
     "@bufferapp/keywrapper": "0.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-redux": "5.0.4",
-    "uuid": "3.0.1"
+    "react-redux": "5.0.7",
+    "uuid": "3.3.2"
   },
   "devDependencies": {
     "@storybook/core": "^3.4.11",
     "@storybook/react": "^3.4.11",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-export-extensions": "^6.22.0",
@@ -39,8 +39,8 @@
     "babel-preset-react": "^6.24.1",
     "deep-freeze": "0.0.1",
     "eslint": "^5.3.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "6.10.3",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "7.11.1",
     "jest": "^23.5.0",
     "prettier": "^1.14.2",
     "storybook-addon-a11y": "^3.1.9"
