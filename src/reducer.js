@@ -1,4 +1,4 @@
-import uuid from 'uuid'
+import { v4 as uuidv4 } from 'uuid'
 import keyWrapper from '@bufferapp/keywrapper'
 
 export const actionTypes = keyWrapper('NOTIFICATIONS', {
@@ -62,7 +62,7 @@ export const actions = {
     type: actionTypes.CREATE_NOTIFICATION,
     notificationType,
     message,
-    key: uuid(),
+    key: uuidv4(),
   }),
   createNotificationComplete: ({ notification }) => ({
     type: actionTypes.CREATE_NOTIFICATION_COMPLETE,
