@@ -12,5 +12,5 @@ export default connect(
   }),
 )(Notifications)
 
-export reducer, { actions, actionTypes } from './reducer'
-export middleware from './middleware'
+export { default as reducer,  actions, actionTypes } from './reducer'
+export { default as middleware } from './middleware'
