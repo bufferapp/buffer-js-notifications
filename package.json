@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/notifications",
-  "version": "1.9.6",
+  "version": "1.9.7",
   "description": "Display application notifications",
   "main": "lib/index.js",
   "scripts": {
@@ -17,11 +17,11 @@
     "src"
   ],
   "dependencies": {
+    "@bufferapp/components": "3.6.3",
     "@bufferapp/keywrapper": "0.2.0",
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "@bufferapp/components": "3.0.2",
     "@storybook/core": "^3.4.11",
     "@storybook/react": "^3.4.11",
     "babel-cli": "^6.26.0",
@@ -46,7 +46,7 @@
     "storybook-addon-a11y": "^3.1.9"
   },
   "peerDependencies": {
-    "@bufferapp/components": "3.x",
+    "@bufferapp/components": "3.6.3",
     "react": "16.x",
     "react-dom": "16.x",
     "react-redux": "7.x"

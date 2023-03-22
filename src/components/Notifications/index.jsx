@@ -1,11 +1,10 @@
-import React from 'react'
 import PropTypes from 'prop-types'
-import { calculateStyles } from '@bufferapp/components/lib/utils'
 import {
+  Notification,
+  calculateStyles,
   transitionAnimationTime,
   transitionAnimationType,
-} from '@bufferapp/components/style/animation'
-import { Notification } from '@bufferapp/components'
+} from '@bufferapp/components'
 
 const Notifications = ({ notifications, onNotificationClose }) => (
   <div
