@@ -3,6 +3,7 @@
   "version": "2.0.1-beta.0",
   "description": "Display application notifications",
   "main": "lib/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "storybook": "start-storybook -p 9002",
     "lint": "eslint --ext .js test/ src/",
