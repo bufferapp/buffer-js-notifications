@@ -1,4 +1,4 @@
-import { transitionTimeMilliseconds } from '@bufferapp/components/style/animation'
+import { transitionTimeMilliseconds } from '@bufferapp/components'
 import { actionTypes, actions } from './reducer'
 
 export default ({ dispatch }) => next => action => {

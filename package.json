@@ -1,8 +1,9 @@
 {
   "name": "@bufferapp/notifications",
-  "version": "1.9.7",
+  "version": "2.0.1",
   "description": "Display application notifications",
   "main": "lib/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "storybook": "start-storybook -p 9002",
     "lint": "eslint --ext .js test/ src/",
@@ -17,7 +18,7 @@
     "src"
   ],
   "dependencies": {
-    "@bufferapp/components": "3.6.3",
+    "@bufferapp/components": "^4.0.0",
     "@bufferapp/keywrapper": "0.2.0",
     "uuid": "3.3.2"
   },
@@ -46,7 +47,7 @@
     "storybook-addon-a11y": "^3.1.9"
   },
   "peerDependencies": {
-    "@bufferapp/components": "3.6.3",
+    "@bufferapp/components": "^4.0.0",
     "react": "16.x",
     "react-dom": "16.x",
     "react-redux": "7.x"
@@ -94,9 +95,6 @@
     }
   },
   "jest": {
-    "transformIgnorePatterns": [
-      "/node_modules(?!/@bufferapp/components)/"
-    ],
     "verbose": true
   },
   "publishConfig": {
